@@ -16,13 +16,36 @@ This project is ideal for individuals or organizations looking to automate the s
 
 ---
 
-## Project Structure
+## Dependencies
 
-Sentiment-Analysis-Tool/
-│
-├── SATool_InputText.py             # Analyze single-line text input for sentiment
-├── SATool_InputFilePath.py         # Analyze a text file by specifying its file path
-├── SATool_UploadTextFile.py        # Upload and analyze sentiment for a text file
-├── SATool_UploadCSVFile.py         # Upload and analyze sentiment for a CSV file
-├── requirements.txt                # Required dependencies
-└── README.md                       # Project documentation
+The following Python libraries are required:
+
+- pandas - For handling CSV files.
+- textblob - For performing sentiment analysis.
+- tk - For file dialogs (part of the standard Python library).
+
+To install the dependencies, use:
+
+```bash
+pip install -r requirements.txt
+```
+---
+## How It Works
+
+1. The tool uses TextBlob to analyze the sentiment of the input text.
+2. Sentiment polarity ranges:
+  - Positive: Polarity > 0
+  - Neutral: Polarity = 0
+  - Negative: Polarity < 0
+3. Outputs are displayed in the console and/or saved to new files based on the script used.
+---
+## Usage
+Run one of the following scripts depending on your requirement:
+
+- SATool_InputText.py - For single-line text sentiment analysis.
+- SATool_InputFilePath.py - To analyze a text file line by line.
+- ATool_UploadTextFile.py - Upload a text file for analysis.
+- SATool_UploadCSVFile.py - Upload a CSV file for analysis.
+---
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
